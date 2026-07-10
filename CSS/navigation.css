@@ -1,0 +1,147 @@
+/* ==========================================
+   NAVIGATION BAR
+========================================== */
+
+nav {
+
+    position: fixed;
+
+    top: 0;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 50px;
+
+    box-sizing: border-box;
+
+    background: rgba(10, 10, 10, 0.8);
+
+    backdrop-filter: blur(8px);
+
+    z-index: 100;
+
+}
+
+/* Website Logo */
+
+.logo {
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+}
+
+/* Navigation List */
+
+nav ul {
+
+    display: flex;
+
+    list-style: none;
+
+    gap: 35px;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+/* Individual Menu Items */
+
+nav li {
+
+    cursor: pointer;
+
+    transition: color 0.3s;
+
+}
+
+/* Mouse Hover */
+
+nav li:hover {
+
+    color: #8ccf77;
+
+}
+
+/* ==========================================
+   NAVIGATION LINKS
+========================================== */
+
+nav a {
+
+    color: #f5f5f5;
+
+    text-decoration: none;
+
+    transition: color 0.3s;
+
+}
+
+nav a:hover {
+
+    color: #8ccf77;
+
+}
+
+@media (max-width: 980px) {
+
+    nav {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 16px;
+
+        padding: 18px 28px;
+
+    }
+
+    nav ul {
+
+        flex-wrap: wrap;
+
+        gap: 14px 22px;
+
+    }
+
+}
+
+@media (max-width: 640px) {
+
+    nav {
+
+        position: static;
+
+        padding: 16px 20px;
+
+    }
+
+    .logo {
+
+        font-size: 24px;
+
+    }
+
+    nav ul {
+
+        gap: 12px 16px;
+
+    }
+
+    nav a {
+
+        font-size: 15px;
+
+    }
+
+}

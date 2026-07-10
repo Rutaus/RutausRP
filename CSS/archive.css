@@ -1,0 +1,147 @@
+/* ==========================================
+   GRAND ARCHIVE
+========================================== */
+
+main {
+
+    max-width: 1300px;
+
+    margin: 120px auto 80px;
+
+    padding: 0 30px;
+
+}
+
+.archive-hero {
+
+    text-align: center;
+
+    margin-bottom: 70px;
+
+}
+
+.archive-hero h1 {
+
+    font-family: "Cinzel", serif;
+
+    font-size: 64px;
+
+    color: #efe7d2;
+
+    margin-bottom: 20px;
+
+}
+
+.archive-hero p {
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    color: #d8d2c2;
+
+}
+
+.archive-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+
+}
+
+.archive-card {
+
+    display: block;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    background: rgba(35, 35, 35, 0.85);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    transition: 0.35s;
+
+    z-index: 2;
+
+}
+
+.archive-card h2 {
+
+    color: #f2efe4;
+
+    margin-bottom: 15px;
+
+}
+
+.archive-card p {
+
+    color: #cfc9b8;
+
+    margin: 0;
+
+}
+
+.archive-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color: rgba(140, 210, 140, 0.45);
+
+    box-shadow: 0 0 25px rgba(120, 180, 120, 0.18);
+
+}
+
+@media (max-width: 800px) {
+
+    main {
+
+        margin: 70px auto 60px;
+
+        padding: 0 22px;
+
+    }
+
+    .archive-hero h1 {
+
+        font-size: 44px;
+
+    }
+
+    .archive-grid {
+
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+        gap: 22px;
+
+    }
+
+    .archive-card {
+
+        padding: 28px;
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .archive-hero h1 {
+
+        font-size: 34px;
+
+    }
+
+    .archive-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}

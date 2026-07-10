@@ -1,0 +1,59 @@
+/* ==========================================
+   ENTER ARCHIVE BUTTON
+========================================== */
+
+.enter-button {
+
+    display: inline-block;
+
+    background: linear-gradient(#4d7048, #365234);
+
+    color: #f8f6f0;
+
+    font-family: "Cinzel", serif;
+
+    font-size: 18px;
+
+    letter-spacing: 2px;
+
+    padding: 16px 42px;
+
+    border: 1px solid #88b388;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: all 0.35s ease;
+
+    box-shadow: 0 0 18px rgba(90, 140, 90, 0.2);
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.enter-button:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 0 25px rgba(120, 190, 120, 0.45);
+
+}
+
+button:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 0 25px rgba(120, 190, 120, 0.45);
+
+}
+
+button:hover {
+
+    background-color: #567d56;
+
+}

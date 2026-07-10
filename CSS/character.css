@@ -1,0 +1,303 @@
+/* ==========================================
+   CHARACTER PAGE
+========================================== */
+
+.character-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+    gap: 30px;
+
+    margin-top: 60px;
+
+}
+
+.character-card {
+
+    display: block;
+
+    text-decoration: none;
+
+    background: rgba(40, 40, 40, 0.85);
+
+    padding: 35px;
+
+    border-radius: 14px;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    transition: transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+.character-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: rgba(140, 210, 140, 0.45);
+
+    box-shadow: 0 0 25px rgba(120, 180, 120, 0.20);
+
+}
+
+.character-card h2 {
+
+    font-family: "Cinzel", serif;
+
+    color: #efe7d2;
+
+    margin-bottom: 12px;
+
+}
+
+.character-card span {
+
+    display: block;
+
+    margin: 18px 0;
+
+    color: #8ebf8e;
+
+}
+
+/* ==========================================
+   CHARACTER PROFILE
+========================================== */
+
+.character-profile {
+
+    margin-top: 60px; 
+
+}
+
+.profile-summary {
+
+    display: grid;
+
+    grid-template-columns: 320px 1fr;
+
+    gap: 50px;
+
+    align-items: start;
+
+}
+
+.portrait-placeholder {
+
+    height: 420px;
+
+    border-radius: 12px;
+
+    background: rgba(45,45,45,0.9);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: #8d8d8d;
+
+    font-family: "Cinzel", serif;
+
+}
+
+.profile-details {
+
+    background: rgba(35,35,35,0.85);
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+}
+
+.profile-details h2 {
+
+    margin-bottom: 25px;
+
+    font-family: "Cinzel", serif;
+
+}
+
+.profile-details p {
+
+    margin-bottom: 12px;
+
+}
+
+/* ==========================================
+   CHARACTER SECTIONS
+========================================== */
+
+.chronicle-section {
+
+    margin-top: 50px;
+
+    padding: 35px;
+
+}
+
+.chronicle-section h2 {
+
+    font-family: "Cinzel", serif;
+
+    margin-bottom: 20px;
+
+    color: #efe7d2;
+
+}
+
+.chronicle-section p {
+
+    color: #d6d2c4;
+
+    line-height: 1.8;
+
+}
+
+.chronicle-section ul {
+
+    padding-left: 20px;
+
+}
+
+.chronicle-section li {
+
+    margin-bottom: 10px;
+
+    color: #d6d2c4;
+
+}
+
+.connection-list,
+.event-list {
+
+    list-style: none;
+
+    padding-left: 0;
+
+}
+
+.connection-list li,
+.event-list li {
+
+    border-left: 2px solid rgba(140, 210, 140, 0.35);
+
+    margin-bottom: 18px;
+
+    padding-left: 18px;
+
+    line-height: 1.7;
+
+}
+
+.connection-list strong,
+.event-list strong {
+
+    color: #efe7d2;
+
+}
+
+.character-quote {
+
+    margin-top: 25px;
+
+    padding-left: 20px;
+
+    padding-right: 20px;
+
+    border-left: 3px solid rgba(170, 200, 170, 0.5);
+
+    border-right: 3px solid rgba(170, 200, 170, 0.5);
+
+    font-style: italic;
+
+    color: #d8d2c2;
+
+    line-height: 1.7;
+
+}
+
+
+.section-divider {
+
+    border: none;
+
+    height: 1px;
+
+    background: rgba(255,255,255,0.08);
+
+    margin: 60px 0;
+
+}
+
+@media (max-width: 800px) {
+
+    .character-grid {
+
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+        gap: 22px;
+
+    }
+
+    .character-card {
+
+        padding: 28px;
+
+    }
+
+    .profile-summary {
+
+        grid-template-columns: 1fr;
+
+        gap: 28px;
+
+    }
+
+    .portrait-placeholder {
+
+        height: 320px;
+
+    }
+
+    .profile-details,
+    .chronicle-section {
+
+        padding: 28px;
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .character-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .character-card,
+    .profile-details,
+    .chronicle-section {
+
+        padding: 22px;
+
+    }
+
+    .portrait-placeholder {
+
+        height: 260px;
+
+    }
+
+}
