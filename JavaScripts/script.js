@@ -1,3 +1,7 @@
+// ==============================
+// Home page entrence button
+// ==============================
+
 const scrollButtons = document.querySelectorAll("[data-scroll-target]");
 
 scrollButtons.forEach((button) => {
@@ -12,3 +16,4 @@ scrollButtons.forEach((button) => {
         target.scrollIntoView({ behavior: "smooth" });
     });
 });
+
