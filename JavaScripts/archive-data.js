@@ -7,7 +7,7 @@ const archiveEntries = [
     {
         name: "Rutana",
         type: "Character",
-        aliases: ["Rutana"],
+        aliases: ["Rutana", "Healer"],
         link: "./Characters/rutana.html"
     },
 
@@ -22,7 +22,7 @@ const archiveEntries = [
         name: "The Birdmer of the Dominion",
         type: "Song",
         aliases: ["Birdmer", "Budgie"],
-        link: "./Songs/songs.html"
+        link: "./Songs/birdmer.html"
     }
 
 ];

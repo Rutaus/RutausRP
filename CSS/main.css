@@ -214,13 +214,13 @@ p {
    General Archive Links
    ================================= */
 
-.link a {
+.lore-link {
     color: #d6b56c;
     text-decoration: none;
     transition: 0.3s ease;
 }
 
-.link a:hover {
+.lore-link:hover {
     color: #f5d98a;
     text-shadow: 0 0 8px rgba(245, 217, 138, 0.7);
 }
