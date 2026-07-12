@@ -25,7 +25,9 @@ searchInput.addEventListener("input", function () {
             searchResults.innerHTML += `
                 <a href="${entry.link}" class="search-result">
                     <h3>${entry.name}</h3>
-                    <p>${entry.type}</p>
+                    <span class="type-badge">
+                         ${entry.type}
+                    </span>
                 </a>
             `;
 

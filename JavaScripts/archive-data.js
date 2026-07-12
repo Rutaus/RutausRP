@@ -21,7 +21,7 @@ const archiveEntries = [
     {
         name: "The Birdmer of the Dominion",
         type: "Song",
-        aliases: ["Birdmer"],
+        aliases: ["Birdmer", "Budgie"],
         link: "./Songs/songs.html"
     }
 

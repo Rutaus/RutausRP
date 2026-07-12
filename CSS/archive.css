@@ -233,3 +233,31 @@ main {
     text-shadow: 0 0 8px rgba(245, 217, 138, 0.7);
     transition: 0.3s ease;
 }
+
+/* badge */
+
+.type-badge {
+
+    display: inline-block;
+
+    margin-top: 8px;
+
+    padding: 4px 10px;
+
+    border-radius: 999px;
+
+    font-size: 0.8rem;
+
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+
+    background: rgba(140, 210, 140, 0.15);
+
+    border: 1px solid rgba(140, 210, 140, 0.45);
+
+    color: rgba(220, 240, 220, 0.95);
+
+    transition: 0.3s ease;
+
+}
