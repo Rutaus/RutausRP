@@ -45,6 +45,44 @@
 .song-text p {
     text-align: center;
     margin-bottom: 35px;
-    font-size: 1.1rem;
     white-space: pre-line;
+}
+
+.song-introduction p {
+    max-width: 750px;
+    margin: 0 auto 60px;
+    text-align: center;
+    font-style: italic;
+    font-family: "Lora", serif;
+    
+}
+
+
+.poet-version {
+    opacity: 0.9;
+}
+
+.poet-version h2 {
+    margin-top: 150px;
+    color: #caa86a;
+}
+
+.poet-version .song-text p {
+    color: #c8bea8;
+    letter-spacing: 0.5px;
+    font-family: "Caveat", cursive;
+    font-style: italic;
+    font-size: 1.7rem;
+}
+
+.tavern-version h2 {
+    margin-top: 100px;
+    color: #7ea06f;
+}
+
+.tavern-version .song-text p {
+    color: #e7dec8;
+    font-family: "IM Fell English", serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
 }
