@@ -224,3 +224,13 @@ p {
     color: #f5d98a;
     text-shadow: 0 0 8px rgba(245, 217, 138, 0.7);
 }
+
+.G-link {
+    text-decoration: none;
+    color: #8ccf779c;
+    transition: color 0.3s;
+}
+
+.G-link:hover {
+    color: #8ccf77;
+}
