@@ -211,6 +211,72 @@ p {
 }
 
 /* =================================
+   Footer appearance!
+   ================================= */
+
+.related-category {
+    margin-top: 35px;
+    text-align: center;
+}
+
+
+.related-category h3 {
+    color: #caa86a;
+    font-family: "Libre Baskerville", serif;
+    margin-bottom: 20px;
+}
+
+
+.related-card {
+
+    display: block;
+
+    max-width: 300px;
+
+    margin: 15px auto;
+
+    padding: 15px;
+
+    background: rgba(40, 35, 30, 0.75);
+
+    border: 1px solid rgba(202,168,106,0.25);
+
+    border-radius: 8px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.related-card:hover {
+
+    transform: translateY(-3px);
+
+    border-color: #f5d98a;
+
+}
+
+
+.related-card h4 {
+
+    color: #e7dec8;
+
+    margin: 10px 0 0;
+
+}
+
+
+.related-badge {
+
+    font-size: 0.8rem;
+
+    color: #c8bea8;
+
+    letter-spacing: 1px;
+
+}
+
+/* =================================
    General Archive Links
    ================================= */
 
@@ -234,3 +300,4 @@ p {
 .G-link:hover {
     color: #8ccf77;
 }
+
