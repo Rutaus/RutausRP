@@ -41,8 +41,9 @@ for (const category in relatedEntries) {
 
             <h3>${categoryNames[category]}</h3>
 
-        </div>
+            <div class="related-list">
     `;
+
 
     entries.forEach(id => {
 
@@ -50,34 +51,39 @@ for (const category in relatedEntries) {
             return entry.id === id;
         });
 
+
         if (!foundEntry) {
             return;
         }
 
+
         relatedHTML += `
             <a href="${fixLink(foundEntry.link)}" class="related-card">
-
-                <span class="related-badge">
-                    ${foundEntry.type}
-                </span>
-
-                <h4>
-                    ${foundEntry.name}
-                </h4>
-
+                ${foundEntry.name}
             </a>
         `;
 
     });
+
+
+    relatedHTML += `
+            </div>
+
+        </div>
+    `;
 
 }
 
 const relatedSection = document.getElementById("related-entries");
 
 relatedSection.innerHTML = `
+    <hr>
+
     <h2>Related Entries</h2>
 
-    ${relatedHTML}
+    <div class="related-container">
+        ${relatedHTML}
+    </div>
 `;
 
 function fixLink(link) {
