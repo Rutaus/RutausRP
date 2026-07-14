@@ -7,57 +7,108 @@ const archiveEntries = [
     //  Characters  // 
     
     {
+        id: "rutana",
         name: "Rutana",
         type: "Character",
         aliases: ["Rutana", "Healer"],
         link: "./Characters/rutana.html",
-        relations: ["Vigil of the Quiet Light"]
+        relations: {
+            characters: [],
+            songs: [],
+            stories: [],
+            places: [],
+            lore: []
+        }
     },
 
     {
+        id: "nerael",
         name: "Nerael'Ruta",
         type: "Character",
         aliases: ["Nerael", "Birdmer", "Budgie", "Goddess of Skies and Lightnings", "Eights"],
         link: "./Characters/nerael.html",
-        relations: ["Siloril Sositte", "AD Pantheon"]
+        relations: {
+            characters: ["siloril"],
+            songs: ["birdmer-song"],
+            stories: [],
+            places: [],
+            lore: ["eights"]
+        }
     },
 
     {
+        id: "siloril",
         name: "Siloril Sositte",
         type: "Character",
         aliases: ["Siloril", "AD Intel Master", "Goddess of Work and Trade", "Eights"],
         link: "./Characters/siloril.html",
-        relations: ["Nerael'Ruta", "AD Pantheon",]
+        relations: {
+            characters: ["nerael"],
+            songs: [],
+            stories: [],
+            places: [],
+            lore: ["eights"]
+        }
     },
 
     //  Songs  //
 
     {
+        id: "birdmer-song",
         name: "The Birdmer of the Dominion",
         type: "Song",
         aliases: ["Birdmer", "Budgie"],
         link: "./Songs/birdmer.html",
-        relations: ["Nerael'Ruta", "Cyrodiil"]
+        relations: {
+            characters: ["nerael"],
+            songs: [],
+            stories: [],
+            places: ["cyrodiil"],
+            lore: []
+        }
     },
 
     //  Places  //
 
     {
+        id: "bosmer Heaven",
         name: "Bosmer Heaven",
-        type: "places",
+        type: "Place",
         aliases: ["Bosmer Heaven"],
         link: "./Map/map.html",
-        relations: ["Nerael'Ruta", "Siloril Sositte"]
+        relations: {
+            characters: [
+                "nerael",
+                "siloril"
+            ],
+            songs: [],
+            stories: [],
+            places: [],
+            lore: []
+        }
     },
 
-    //  Religions  //
+    //  Lore  //
 
     {
+        id: "eights",
         name: "AD Pantheon",
-        type: "Religion",
+        type: "Lore",
         aliases: ["AD Pantheon", "Aldmeri Dominion Pantheon", "Eights", "Goddesses"],
         link: "#",
-        relations: ["Nerael'Ruta", "Siloril Sositte", "Elanwel'Snear", "Vex Landa", "Aranelis Calithrae"]
+        relations: {
+            characters: [
+                "nerael",
+                "siloril",
+                "elanwel",
+                "vex",
+                "aranelis"
+            ],
+            songs: [],
+            stories: [],
+            places: [],
+            lore: []
+        }
     }
 
     // {
@@ -65,7 +116,13 @@ const archiveEntries = [
     //     type: "",
     //     aliases: [""],
     //     link: "",
-    //     relations: [""]
+    //     relations: {
+    //          characters: [],
+    //          songs: [],
+    //          stories: [],
+    //          places: [],
+    //          lore: []
+    //      }
     // }
 
 ];
