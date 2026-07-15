@@ -3,63 +3,52 @@
 ========================================== */
 
 .character-grid {
-
     display: grid;
-
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-
     gap: 30px;
-
     margin-top: 60px;
-
 }
 
 .character-card {
 
-    display: block;
-
-    text-decoration: none;
-
+    display: flex;
+    flex-direction: column;
     background: rgba(40, 40, 40, 0.85);
-
     padding: 35px;
-
     border-radius: 14px;
-
     border: 1px solid rgba(255, 255, 255, 0.08);
-
     transition: transform 0.3s ease,
         box-shadow 0.3s ease;
 
 }
 
 .character-card:hover {
-
     transform: translateY(-8px);
-
     border-color: rgba(140, 210, 140, 0.45);
-
     box-shadow: 0 0 25px rgba(120, 180, 120, 0.20);
-
 }
 
 .character-card h2 {
-
     font-family: "Cinzel", serif;
-
     color: #efe7d2;
-
     margin-bottom: 12px;
+}
 
+.character-card p {
+    margin-top: 0;
+    flex-grow: 1;
 }
 
 .character-card span {
-
-    display: block;
-
-    margin: 18px 0;
-
+    margin-top: auto;
     color: #8ebf8e;
+}
+
+.character-card,
+.character-card:link,
+.character-card:visited {
+
+    text-decoration: none;
 
 }
 
