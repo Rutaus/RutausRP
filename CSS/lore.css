@@ -1,0 +1,51 @@
+/* ==========================================
+   Lore pages
+   ========================================== */
+
+.lore-container {
+    max-width: 1500px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.lore-introduction {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto 60px;
+}
+
+.lore-quote {
+    color: #d6d2c49a;
+    font-style: italic;
+}
+
+.quote-author {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.lore-introduction p {
+    color: var(--text-soft);
+    margin: 50px;
+}
+
+.lore-section {
+    margin-bottom: 80px;
+}
+
+.lore-section h2 {
+    text-align: center;
+    color: #e0dcd3ab;
+    margin-bottom: 30px;
+    margin-top: 85px;
+    font-size: 40px;
+    text-shadow: 2px 2px 8px #e0dcd3ab;
+}
+
+.lore-content {
+    text-align: center;
+}
+
+.lore-content p {
+    color: var(--text-soft);
+}

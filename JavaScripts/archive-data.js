@@ -10,7 +10,7 @@ const archiveEntries = [
         id: "rutana",
         name: "Rutana",
         type: "Character",
-        aliases: ["Rutana", "Healer"],
+        aliases: ["Healer"],
         link: "./Characters/rutana.html",
         relations: {
             characters: [],
@@ -25,7 +25,7 @@ const archiveEntries = [
         id: "nerael",
         name: "Nerael'Ruta",
         type: "Character",
-        aliases: ["Nerael", "Birdmer", "Budgie", "Goddess of Skies and Lightnings", "Eights"],
+        aliases: ["Birdmer", "Budgie", "Goddess of Skies and Lightnings", "Eights"],
         link: "./Characters/nerael.html",
         relations: {
             characters: ["siloril"],
@@ -40,7 +40,7 @@ const archiveEntries = [
         id: "siloril",
         name: "Siloril Sositte",
         type: "Character",
-        aliases: ["Siloril", "AD Intel Master", "Goddess of Work and Trade", "Eights"],
+        aliases: ["AD Intel Master", "Goddess of Work and Trade", "Eights"],
         link: "./Characters/siloril.html",
         relations: {
             characters: ["nerael"],
@@ -57,7 +57,7 @@ const archiveEntries = [
         id: "birdmer-song",
         name: "The Birdmer of the Dominion",
         type: "Song",
-        aliases: ["Birdmer", "Budgie"],
+        aliases: ["Budgie"],
         link: "./Songs/birdmer.html",
         relations: {
             characters: ["nerael"],
@@ -74,7 +74,7 @@ const archiveEntries = [
         id: "bosmer Heaven",
         name: "Bosmer Heaven",
         type: "Place",
-        aliases: ["Bosmer Heaven"],
+        aliases: ["home"],
         link: "./Map/map.html",
         relations: {
             characters: [
@@ -88,6 +88,21 @@ const archiveEntries = [
         }
     },
 
+    {
+        id: "cyro",
+        name: "cyrodiil",
+        type: "place",
+        aliases: ["war"],
+        link: "./world lore/lore.html",
+        relations: {
+             characters: ["nerael", "rutana", "vex"],
+             songs: [],
+             stories: [],
+             places: [],
+             lore: []
+         }
+    },
+
     //  Lore  //
 
     {
@@ -95,7 +110,7 @@ const archiveEntries = [
         name: "AD Pantheon",
         type: "Lore",
         aliases: ["AD Pantheon", "Aldmeri Dominion Pantheon", "Eights", "Goddesses"],
-        link: "#",
+        link: "./World Lore/pantheon.html",
         relations: {
             characters: [
                 "nerael",
@@ -112,6 +127,7 @@ const archiveEntries = [
     }
 
     // {
+    //     id: "",
     //     name: "",
     //     type: "",
     //     aliases: [""],
@@ -123,6 +139,6 @@ const archiveEntries = [
     //          places: [],
     //          lore: []
     //      }
-    // }
+    // },
 
 ];

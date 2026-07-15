@@ -56,6 +56,15 @@ body {
 
 }
 
+.section-divider {
+
+    border: none;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.08);
+    margin: 60px 0;
+
+}
+
 /* ==========================================
    HEADER
    ========================================== */
@@ -331,3 +340,12 @@ p {
     color: #8ccf77;
 }
 
+.B-link {
+    text-decoration: none;
+    color: #8ccf779c;
+    transition: color 0.3s;
+}
+
+.B-link:hover {
+    color: #8ccf77;
+}
