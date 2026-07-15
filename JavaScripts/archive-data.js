@@ -51,7 +51,7 @@ const archiveEntries = [
         }
     },
 
-        {
+    {
         id: "neravelle",
         name: "Neravelle Aramyr",
         type: "Character",
@@ -63,29 +63,29 @@ const archiveEntries = [
             stories: [],
             places: ["bosmer heaven"],
             lore: []
-         }
+        }
     },
 
-        {
+    {
         id: "larvaneth",
         name: "Larvaneth",
         type: "Character",
         aliases: [""],
         link: "./Characters/larvaneth.html",
         relations: {
-            characters: ["siloril", "nerael", "neravelle" ,"sirenwe"],
+            characters: ["siloril", "nerael", "neravelle", "sirenwe"],
             songs: [],
             stories: [],
             places: ["bosmer heaven"],
             lore: []
-         }
+        }
     },
 
     {
         id: "elanwel",
         name: "Elanwel'Snear",
         type: "Character",
-        aliases: ["ela", "AD Queen", "Queen of AD", "Goddess of Marcy and Charity"],
+        aliases: ["ela", "AD Queen", "Queen of AD", "Goddess of Marcy and Charity", "eights"],
         link: "./Characters/elanwel.html",
         relations: {
             characters: ["siloril", "nerael", , "vex", "rutana"],
@@ -100,10 +100,10 @@ const archiveEntries = [
         id: "vex",
         name: "Vex Landa",
         type: "Character",
-        aliases: ["Vexxy", "Queen of Summerset", "Goddess of War"],
+        aliases: ["Vexxy", "Queen of Summerset", "Goddess of War", "eights"],
         link: "./Characters/vex.html",
         relations: {
-            characters: ["elanwel", "lirith", ],
+            characters: ["elanwel", "lirith",],
             songs: [],
             stories: [],
             places: [],
@@ -117,10 +117,10 @@ const archiveEntries = [
         id: "aranelis",
         name: "Aranelis Calithrae",
         type: "Character",
-        aliases: ["Goddess of Time", "Cutie from the past", "Daughter of Crystal and Storm", "The Pearl of Tides"],
+        aliases: ["Goddess of Time", "Cutie from the past", "Daughter of Crystal and Storm", "The Pearl of Tides", "eights"],
         link: "./Characters/aranelis.html",
         relations: {
-            characters: ["lirien", "vivien", "elanariel", "ela-junior", "azura"],
+            characters: ["lirien", "vivien", "elanariel", "elanariel-junior", "azura"],
             songs: [],
             stories: [],
             places: ["bosmer heaven"],
@@ -128,11 +128,11 @@ const archiveEntries = [
         }
     },
 
-        {
+    {
         id: "azura",
         name: "Lady Azura",
         type: "Character",
-        aliases: ["Goddes of Love and Beauty", ""],
+        aliases: ["Goddes of Love and Beauty", "eights"],
         link: "./Characters/azura.html",
         relations: {
             characters: [],
@@ -140,14 +140,14 @@ const archiveEntries = [
             stories: [],
             places: ["bosmer heaven"],
             lore: ["eights"]
-         }
+        }
     },
 
-        {
+    {
         id: "lathanwe",
         name: "Lathanwe Calithrae",
         type: "Character",
-        aliases: ["Goddess of Life and Death"],
+        aliases: ["Goddess of Life and Death", "eights"],
         link: "./Characters/lathanwe.html",
         relations: {
             characters: ["lirael", "eh'lhiel", "necro-arya"],
@@ -155,14 +155,29 @@ const archiveEntries = [
             stories: [],
             places: ["bosmer heaven"],
             lore: ["eights"]
-         }
+        }
+    },
+
+    {
+        id: "liriel",
+        name: "Lirael'Selenar",
+        type: "Character",
+        aliases: ["Paladin of Life and Death"],
+        link: "./Characters/lathanwe.html",
+        relations: {
+            characters: ["flavia", "lathanwe", "necro-arya"],
+            songs: [],
+            stories: [],
+            places: ["bosmer heaven"],
+            lore: ["eights"]
+        }
     },
 
     {
         id: "keaniel",
         name: "Keaniel Beeravi",
         type: "Character",
-        aliases: ["Handsome", "Goddess of Wisdom and Logic"],
+        aliases: ["Handsome", "Goddess of Wisdom and Logic", "eights"],
         link: "./Characters/keaniel.html",
         relations: {
             characters: ["safia", "arca-arya", "kariniel", "eveli"],
@@ -170,22 +185,52 @@ const archiveEntries = [
             stories: [],
             places: ["bosmer heaven"],
             lore: ["eights"]
-         }
+        }
     },
 
-        {
+    {
         id: "safia",
         name: "Safia Falco",
         type: "Characters",
         aliases: ["Handsome", "Paladin of Wisdom"],
         link: "./Characters/safia.html",
         relations: {
-            characters: [],
+            characters: ["keaniel", "mercedes", "laelia"],
             songs: [],
             stories: [],
-            places: [],
+            places: ["bosmer heaven"],
+            lore: ["eights"]
+        }
+    },
+
+    {
+        id: "flavia",
+        name: "Flavia Varga",
+        type: "Character",
+        aliases: ["Srg", "Fleet", "Paladin of wine and tits"],
+        link: "./Characters/flavia.html",
+        relations: {
+            characters: ["telriel"],
+            songs: [],
+            stories: [],
+            places: ["bosmer heaven"],
             lore: []
-         }
+        }
+    },
+
+    {
+        id: "talriel",
+        name: "Talriel Septa",
+        type: "Character",
+        aliases: ["Empress", "Goddess of Wine and Tits", "eights"],
+        link: "./Characters/talriel.html",
+        relations: {
+            characters: ["elanwel", "azura", "flavia"],
+            songs: [],
+            stories: [],
+            places: ["bosmer heaven"],
+            lore: []
+        }
     },
 
     //  Songs  //
@@ -229,7 +274,7 @@ const archiveEntries = [
         name: "cyrodiil",
         type: "place",
         aliases: ["war"],
-        link: "./world lore/lore.html",
+        link: "./world lore/cyrodiil.html",
         relations: {
             characters: ["nerael", "rutana", "vex"],
             songs: [],
@@ -249,14 +294,30 @@ const archiveEntries = [
         link: "./World Lore/pantheon.html",
         relations: {
             characters: [
-                "nerael", "siloril", "elanwel", "vex", "aranelis", "azura", "lathanwe","keaniel", 
-                "talriel", "liriel", "safia", "luriel", "aurica", "elanariel", "flavia"
+                "nerael", "siloril", "elanwel", "vex", "aranelis", "azura", "lathanwe", "keaniel",
+                "talriel", "liriel", "safia", "luriel", "aurica", "elanariel-junior", "flavia",
+                "fire-arya"
             ],
             songs: [],
             stories: [],
             places: ["bosmer heaven"],
-            lore: []
+            lore: ["hce"]
         }
+    },
+
+        {
+        id: "hce",
+        name: "Holy Cyrodiil Empire",
+        type: "Lore",
+        aliases: ["hce"],
+        link: "./World Lore/hce.html",
+        relations: {
+            characters: ["talriel", "elanwel"],
+            songs: [],
+            stories: [],
+            places: ["cyro"],
+            lore: []
+         }
     }
 
     // {
