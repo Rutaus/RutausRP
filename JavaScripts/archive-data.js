@@ -14,7 +14,7 @@ const archiveEntries = [
         tags: ["Rutaus", "Sorcerer", "Bosmer", "Goddess"],
         aliases: [
             "Birdmer", "Budgie", "Goddess of Skies and Lightnings",
-            "Eights", "Bosmer"
+            "Eights", "Bosmer", "Sorcerer"
         ],
         link: "./Characters/nerael.html",
         relations: {
@@ -34,7 +34,7 @@ const archiveEntries = [
         tags: ["Ave", "Sorcerer", "Bosmer", "Goddess"],
         aliases: [
             "AD Intel Master", "Goddess of Work and Trade",
-            "Eights", "Bosmer"
+            "Eights", "Bosmer", "Sorcerer"
         ],
         link: "./Characters/siloril.html",
         relations: {
@@ -54,7 +54,7 @@ const archiveEntries = [
         tags: ["Ave", "Templar", "Bosmer", "Goddess"],
         aliases: [
             "ela", "AD Queen", "Queen of AD", "Goddess of Marcy and Charity",
-            "eights", "Bosmer"
+            "eights", "Bosmer", "Templar"
         ],
         link: "./Characters/elanwel.html",
         relations: {
@@ -74,7 +74,7 @@ const archiveEntries = [
         tags: ["Ave", "Templar", "Bosmer", "Goddess"],
         aliases: [
             "Vexxy", "Queen of Summerset", "Goddess of War",
-            "Eights", "Bosmer"
+            "Eights", "Bosmer", "Templar"
         ],
         link: "./Characters/vex.html",
         relations: {
@@ -92,7 +92,7 @@ const archiveEntries = [
         type: "Character",
         subtitle: "Vigil-Bearer of the Quiet Light",
         tags: ["Rutaus", "Templar", "Breton", "Healer"],
-        aliases: ["Healer", "Breton"],
+        aliases: ["Healer", "Breton", "Templar"],
         link: "./Characters/rutana.html",
         relations: {
             characters: [],
@@ -109,7 +109,7 @@ const archiveEntries = [
         type: "Character",
         subtitle: "Gift touched by unseen magic",
         tags: ["Ave", "Sorcerer", "Bosmer"],
-        aliases: [""],
+        aliases: ["Sorcerer"],
         link: "./Characters/neravelle.html",
         relations: {
             characters: ["siloril", "nerael", "larveneth", "sirenwe"],
@@ -126,7 +126,7 @@ const archiveEntries = [
         type: "Character",
         subtitle: "",
         tags: ["Ave", "Warden", "Bosmer", "Healer"],
-        aliases: [""],
+        aliases: ["Warden", "Healer"],
         link: "./Characters/larveneth.html",
         relations: {
             characters: ["siloril", "nerael", "neravelle", "sirenwe"],
@@ -145,7 +145,10 @@ const archiveEntries = [
         type: "Character",
         subtitle: "Daughter of Crystal and Storm",
         tags: ["Ave", "Templar", "Bosmer", "Goddess"],
-        aliases: ["Goddess of Time", "Cutie from the past", "Daughter of Crystal and Storm", "The Pearl of Tides", "eights"],
+        aliases: [
+            "Goddess of Time", "Cutie from the past", "Daughter of Crystal and Storm",
+            "The Pearl of Tides", "Eights", "Templar"
+        ],
         link: "./Characters/aranelis.html",
         relations: {
             characters: ["lirien", "vivien", "elanariel", "elanariel-junior", "azura"],
@@ -162,7 +165,7 @@ const archiveEntries = [
         type: "Character",
         subtitle: "Goddess of Love and Beauty",
         tags: ["<del>Ave</del>", "Necromancer", "Bosmer", "Goddess"],
-        aliases: ["Goddes of Love and Beauty", "eights"],
+        aliases: ["Goddess of Love and Beauty", "Eights", "Necromancer"],
         link: "./Characters/azura.html",
         relations: {
             characters: [],
@@ -179,7 +182,7 @@ const archiveEntries = [
         type: "Character",
         subtitle: "Goddess of Life and Death",
         tags: ["Ave", "Necromaner", "Bosmer", "Goddess"],
-        aliases: ["Goddess of Life and Death", "eights"],
+        aliases: ["Goddess of Life and Death", "Eights", "Necromancer"],
         link: "./Characters/lathanwe.html",
         relations: {
             characters: ["lirael", "eh'lhiel", "necro-arya"],
@@ -191,12 +194,12 @@ const archiveEntries = [
     },
 
     {
-        id: "liriel",
+        id: "lirael",
         name: "Lirael'Selenar",
         type: "Character",
         subtitle: "Paladin of Life and Death",
         tags: ["Ave", "Necromancer", "Bomser", "Paladin"],
-        aliases: ["Paladin of Life and Death"],
+        aliases: ["Paladin of Life and Death", "Necromancer"],
         link: "./Characters/lathanwe.html",
         relations: {
             characters: ["flavia", "lathanwe", "necro-arya"],
@@ -213,7 +216,7 @@ const archiveEntries = [
         type: "Character",
         subtitle: "Goddess of Widsom and Knowledge",
         tags: ["Ave", "Dragonknight", "Bosmer", "Goddess"],
-        aliases: ["Handsome", "Goddess of Wisdom and Logic", "eights"],
+        aliases: ["Handsome", "Goddess of Wisdom and Logic", "eights", "Dragonknight", "DK"],
         link: "./Characters/keaniel.html",
         relations: {
             characters: ["safia", "arca-arya", "kariniel", "eveli"],
@@ -230,10 +233,10 @@ const archiveEntries = [
         type: "Character",
         subtitle: "Paladin of Wisdom",
         tags: ["Rutaus", "Dragonknight", "Bosmer", "Paladin"],
-        aliases: ["Handsome", "Paladin of Wisdom"],
+        aliases: ["Handsome", "Paladin of Wisdom", "Dragonknight", "DK"],
         link: "./Characters/safia.html",
         relations: {
-            characters: ["keaniel", "mercedes", "laelia"],
+            characters: ["keaniel", "mercedes", "laelia", "luriel"],
             songs: [],
             stories: [],
             places: ["bosmer heaven"],
@@ -247,14 +250,14 @@ const archiveEntries = [
         type: "Character",
         subtitle: "Paladin of Logic",
         tags: ["Rutuas", "Dragonknight", "Bosmer", "Paladin"],
-        aliases: [""],
-        link: "",
+        aliases: ["Paladin of Logic", "Dragonknight", "DK"],
+        link: "./Characters/luriel.html",
         relations: {
-            characters: [],
+            characters: ["keaniel", "safia"],
             songs: [],
             stories: [],
-            places: [],
-            lore: []
+            places: ["bosmer heaven"],
+            lore: ["eights"]
          },
          
     },
@@ -264,8 +267,8 @@ const archiveEntries = [
         name: "Flavia Varga",
         type: "Character",
         subtitle: "",
-        tags: [],
-        aliases: ["Srg", "Fleet", "Paladin of wine and tits"],
+        tags: ["Rutaus", "NightBlade", "Bosmer"],
+        aliases: ["Srg", "Fleet", "Nightblade", "NB"],
         link: "./Characters/flavia.html",
         relations: {
             characters: ["telriel"],
@@ -282,15 +285,33 @@ const archiveEntries = [
         type: "Character",
         subtitle: "Empress & Goddess of Wine and Tits",
         tags: ["Ave", "Dragonknight", "Bosmer", "Goddess"],
-        aliases: ["Empress", "Goddess of Wine and Tits", "eights"],
+        aliases: ["Empress", "Goddess of Wine and Tits", "eights", "Dragonknight", "DK"],
         link: "./Characters/talriel.html",
         relations: {
-            characters: ["elanwel", "azura", "flavia"],
+            characters: ["elanwel", "azura", "fire-arya"],
             songs: [],
             stories: [],
             places: ["bosmer heaven"],
-            lore: []
+            lore: ["eights"]
         }
+    },
+
+    {
+        id: "fire-arya",
+        name: "Arya Teldundindo",
+        type: "Character",
+        subtitle: "Paladin of Wine and Tits",
+        tags: ["Rutaus", "Dragonknight", "Bosmer", "Paladin"],
+        aliases: ["DK", "DragonKnight", "Paladin of wine and tits", "Fire Arya"],
+        link: "",
+        relations: {
+            characters: ["aurelia", "elanwel", "talriel"],
+            songs: [],
+            stories: [],
+            places: ["bosmer heaven"],
+            lore: ["eights"]
+         },
+         
     },
 
     //  Songs  //
