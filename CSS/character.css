@@ -49,7 +49,24 @@
 .character-card:visited {
 
     text-decoration: none;
+}
 
+.character-card.owner-rutaus {
+    border-color: rgba(150, 110, 255, 0.45);
+}
+
+.character-card.owner-rutaus:hover {
+    border-color: rgba(170, 130, 255, 0.7);
+    box-shadow: 0 0 25px rgba(150,110,255,0.30);
+}
+
+.character-card.owner-ave {
+    border-color: rgba(214,181,108,0.45);
+}
+
+.character-card.owner-ave:hover {
+    border-color: rgba(235,205,130,0.7);
+    box-shadow: 0 0 25px rgba(214,181,108,0.30);
 }
 
 /* ==========================================
