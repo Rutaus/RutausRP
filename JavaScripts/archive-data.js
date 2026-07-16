@@ -305,7 +305,7 @@ const archiveEntries = [
             characters: ["nerael"],
             songs: [],
             stories: [],
-            places: ["cyrodiil"],
+            places: ["cyro"],
             lore: []
         }
     },
@@ -317,7 +317,7 @@ const archiveEntries = [
         name: "Bosmer Heaven",
         type: "Place",
         aliases: ["home"],
-        link: "./Map/map.html",
+        link: "./Map/bosmer-heaven.html",
         relations: {
             characters: [
                 "nerael", "siloril", "azura"
@@ -331,10 +331,10 @@ const archiveEntries = [
 
     {
         id: "cyro",
-        name: "cyrodiil",
+        name: "Cyrodiil",
         type: "place",
         aliases: ["war"],
-        link: "./world lore/cyrodiil.html",
+        link: "./Map/cyrodiil.html",
         relations: {
             characters: ["nerael", "rutana", "vex"],
             songs: [],
